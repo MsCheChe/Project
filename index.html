@@ -19,6 +19,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
+            
         }
         .page{
             border: black solid 1px;
@@ -109,18 +110,19 @@
             border-radius: 10%;
             box-shadow: 0px 10px 10px 10px;
         }
-        .primary:hover{
-            width: 100%;
+        .primary:hover,img{
+            width: 40%;
             transition-duration: 2s;
             border-radius: 200px 0px 200px 0px;
+            
         }
         .secondary:hover{
-            width: 100%;
+            width: 40%;
             transition-duration: 2s;
             border-radius: 200px 0px 200px 0px;
         }
         .tertiary:hover{
-            width: 100%;
+            width: 40%;
             transition-duration: 2s;
             border-radius: 200px 0px 200px 0px;
         }
@@ -159,7 +161,11 @@
             border-radius: 15px;
             box-shadow: 0px 0px 30px 10px;
         }
-        
+        .img:hover{
+            transform:scale(.8);
+            transition: 1s;
+            background-color: red;
+        }
         .footer{
             height: 180px;
             width: 100%;
@@ -197,15 +203,15 @@
 
     <div class="about">
         <div class="primary">
-                <img src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
+                <img class="img" src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
         </div>
 
         <div class="secondary">
-            <img src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
+            <img class="img" src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
         </div>
 
         <div class="tertiary">
-            <img src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
+            <img class="img" src="https://th.bing.com/th/id/OIP.EHAPZj6Yhn3nsWcB3gHBNAHaHZ?w=198&h=197&c=7&r=0&o=5&pid=1.7" alt="no image" style="border-radius: 50%;">
         </div>
     </div>
 
@@ -213,7 +219,7 @@
 
         
             <div class="o-games">
-                
+                    
             </div>
 
             <div class="b-ball">
@@ -221,7 +227,7 @@
             </div>
 
             <div class="chess">
-             
+               
             </div>
          
     </div>
