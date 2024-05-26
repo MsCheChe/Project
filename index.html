@@ -13,7 +13,9 @@
             margin: 0;
             padding: 0;
         }
-        
+        .nav-link{
+            color: white;
+        }
         .header {
             background-color: black;
             color: white;
@@ -22,7 +24,7 @@
             width: 100%;
             z-index: 1000;
             display: flex;
-            justify-content: space-between;
+            
             align-items: center;
         }
 
@@ -30,22 +32,6 @@
             margin: 0;
             font-size: 24px;
             font-weight: bold;
-        }
-
-        .navbar {
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: orange;
         }
 
         .main-content {
@@ -186,7 +172,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-start">
-                        <h2 class="animate__bounceIn">Welcome to My Portfolio</h2>
+                        <h2 class="animate__bounceIn" style="font-weight: bold;
+                        background: linear-gradient(45deg, #ff6b6b, #ff8e53, #ffdd57);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;">Welcome to My Portfolio</h2>
                         <p>Hello, my name is Joshua Ramos, an IT student from Global Reciprocal Colleges, aspiring to be a great web developer someday :)</p>
                         <p>Why did the tree go to school? To get a little more rooted in knowledge!</p>
                         <a href="#section2" class="btn" style="background-color: orange; color: white;font-weight: bold;">Learn More</a>
@@ -201,7 +192,7 @@
         <section id="section2" class="section about">
             <div class="container">
                 <h2>Educational Attainment</h2>
-                <div class="row" cl>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
@@ -270,7 +261,7 @@
             <div class="social-icons">
                 <a href="https://www.instagram.com/cornbeef828/"><i class="fab fa-instagram"></i></a>
                 <a href="https://web.facebook.com/profile.php?id=100048839388979"><i class="fab fa-facebook"></i></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i  class="fas fa-envelope"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
