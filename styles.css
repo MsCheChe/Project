@@ -1,0 +1,53 @@
+*{
+    font-family: Monospace;
+}
+body{
+  background-image: url('bg.png'); 
+  background-size: cover; /* Resize image to fit button */
+  background-position: center; /* Center the image */ 
+  
+}
+.playButton{
+    
+  height: 100px;        
+  width: 100px;
+  background-size: cover; /* Resize image to fit button */
+  background-position: center; /* Center the image */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor on hover */
+  outline: none; /* Remove outline on focus */
+}
+.border{
+  width: 25%;
+  height: 350px   ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color:white;
+  padding: 10px;
+  border-radius: 9px; 
+
+  
+}
+.opt{
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1300px) {
+    .border{
+      width: 40%;
+    }
+    body{
+        background-image: none;
+        background-color: gainsboro;
+    }
+}
+@media screen and (max-width: 800px) {
+    .border{
+      width: 90%;
+    }
+    body{
+        background-image: none;
+        background-color: gainsboro;
+    }
+}

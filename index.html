@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="border">
+    <div class="opt">
+    <button style="background-image: url('rock.jpg');" class="playButton" onclick="play('Rock')"></img></button>
+    <button style="background-image: url('paper.jpg');" class="playButton" onclick="play('Paper')"></button>
+    <button style="background-image: url('scissors.jpg');" class="playButton" onclick="play('Scissor')"></button>
+    </div>
+    <br>
+    <p>Your Hand :<p id="pHand">...</p></p>
+    <p>Computer Hand :<p id="cHand">...</p></p>
+    <br>
+    <p>Player Score :<span id="playerScore">0</span></p>
+    <p>Computer Score :<span id="computerScore">0</span></p>
+    <button onclick="resetGame()">Game Reset</button>
+  </div>
+  <script>
+    let computerScore = 0;
+    let playerScore = 0;
+    let playerHand = "";
+    let computerHand = "";
+    let randomNum = 0;
+    function play(player) {
+      randomNum = Math.floor(Math.random() * 3);
+      
+      if(randomNum === 1) {
+          computerHand = "Rock";
+      }
+      else if(randomNum === 2) {
+          computerHand = "Paper";
+      }
+      else{
+          computerHand = "Scissor";  
+      }
+
+      playerHand = player;
+      
+      if(playerHand === computerHand){
+        alert("TIE");
+      }
+      else if((playerHand === 'Rock' && computerHand === 'Scissor')||
+      (playerHand === 'Paper' && computerHand === 'Rock')||
+      (playerHand === 'Scissor' && computerHand === 'Paper')){
+        playerScore += 1 ;  
+      }
+      else{
+        computerScore += 1 ;
+      }
+      document.getElementById('playerScore').innerHTML = playerScore;
+      document.getElementById('computerScore').innerHTML = computerScore;
+      document.getElementById('pHand').innerHTML = playerHand;
+      document.getElementById('cHand').innerHTML = computerHand;
+      playerHand = "";
+      computerHand = "";
+    }
+  
+    function resetGame() {
+      computerScore = 0;
+      playerScore = 0;
+
+      document.getElementById('playerScore').innerHTML = playerScore;
+      document.getElementById('computerScore').innerHTML = computerScore;
+      document.getElementById('pHand').innerHTML = playerHand;
+      document.getElementById('cHand').innerHTML = computerHand;
+    }
+  </script>
+  
+</body>
+</html>
